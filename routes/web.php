@@ -46,10 +46,13 @@ Route::middleware('auth')->group(function () {
         ->name('payment.create');
     
     Route::group(['middleware' => ['IsRole:ADMIN']], function() {
-        Route::resource('student', StudentController::class);
+        
     });
-    
 
+    Route::resource('student', StudentController::class)
+        ->middleware('role:IsRole')
+        ->except(['show']);
+    
     Route::resource('grade', GradeController::class)
         ->middleware('role:IsRole')
         ->except(['show']);

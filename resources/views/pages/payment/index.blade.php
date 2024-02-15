@@ -17,13 +17,10 @@
                                    class="inline-flex items-center mr-1 px-6 py-2 mt-6 bg-gray-800 border border-transparent text-xs rounded-md font-semibold text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 transition ease-in-out duration-150">
                                     Bayar
                                 </a>
-                                @if(auth()->user()->role == "ADMIN")
-                                    <a href="{{ route('payment.print', $student->nisn) }}"
-                                       class="inline-flex items-center mr-1 px-6 py-2 mt-6 bg-gray-800 border border-transparent text-xs rounded-md font-semibold text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 transition ease-in-out duration-150">
-                                        Cetak Laporan
-                                    </a>
-                                @endif
-
+                                <a href="{{ route('payment.print', $student->nisn) }}"
+                                    class="inline-flex items-center mr-1 px-6 py-2 mt-6 bg-gray-800 border border-transparent text-xs rounded-md font-semibold text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 transition ease-in-out duration-150">
+                                    Cetak Laporan
+                                </a>
                             </div>
 
                             <div class="overflow-hidden mt-6 mb-6">

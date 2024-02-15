@@ -12,7 +12,6 @@
 
 <body style="font-family: sans-serif;">
 <header>
-    <img src="{{ public_path('logo.png') }}" alt="{{ $title }}" width="50px" class="mb-2" srcset="">
     <hr>
 </header>
 <section>
