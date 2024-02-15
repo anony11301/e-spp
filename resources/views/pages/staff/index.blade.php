@@ -32,7 +32,6 @@
                                     </a>
                                 </div>
                             </div>
-
                             <div class="overflow-hidden mb-6">
                                 <table class="min-w-full w-full">
                                     <thead class="border-b">
